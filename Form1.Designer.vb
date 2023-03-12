@@ -22,226 +22,505 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.mainFrame = New System.Windows.Forms.Panel()
-        Me.Panel9 = New System.Windows.Forms.Panel()
-        Me.PageContainer = New System.Windows.Forms.Panel()
-        Me.panelMain = New System.Windows.Forms.Panel()
-        Me.btnForm2 = New System.Windows.Forms.Button()
-        Me.btnMain = New System.Windows.Forms.Button()
+        Me.dtGrid1 = New System.Windows.Forms.DataGridView()
+        Me.dtDesc = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.dtPrices = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.dtQuant = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.dtTotal = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Panel11 = New System.Windows.Forms.Panel()
+        Me.Panel10 = New System.Windows.Forms.Panel()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.cmbProd = New System.Windows.Forms.ComboBox()
+        Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.txtDesc = New System.Windows.Forms.TextBox()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.txtPrice = New System.Windows.Forms.TextBox()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Panel6 = New System.Windows.Forms.Panel()
+        Me.txtQuant = New System.Windows.Forms.TextBox()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Panel7 = New System.Windows.Forms.Panel()
+        Me.txtTotals = New System.Windows.Forms.TextBox()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Panel8 = New System.Windows.Forms.Panel()
+        Me.btnCompute = New System.Windows.Forms.Button()
+        Me.Panel4 = New System.Windows.Forms.Panel()
+        Me.btnAdd = New System.Windows.Forms.Button()
+        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Panel5 = New System.Windows.Forms.Panel()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.mainMenu = New System.Windows.Forms.MenuStrip()
-        Me.menuForms = New System.Windows.Forms.ToolStripMenuItem()
-        Me.formMain = New System.Windows.Forms.ToolStripMenuItem()
-        Me.formForm2 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.formBlank = New System.Windows.Forms.ToolStripMenuItem()
-        Me.formsHome = New System.Windows.Forms.ToolStripMenuItem()
-        Me.menuSettings = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.HomeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.mainFrame.SuspendLayout()
-        Me.Panel9.SuspendLayout()
-        Me.PageContainer.SuspendLayout()
-        Me.panelMain.SuspendLayout()
+        Me.mainFrame = New System.Windows.Forms.Panel()
+        Me.panelMain = New System.Windows.Forms.Panel()
+        CType(Me.dtGrid1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel11.SuspendLayout()
+        Me.Panel10.SuspendLayout()
+        Me.GroupBox1.SuspendLayout()
+        Me.Panel2.SuspendLayout()
+        Me.Panel3.SuspendLayout()
+        Me.Panel6.SuspendLayout()
+        Me.Panel7.SuspendLayout()
+        Me.Panel8.SuspendLayout()
+        Me.Panel4.SuspendLayout()
+        Me.GroupBox2.SuspendLayout()
+        Me.Panel5.SuspendLayout()
         Me.Panel1.SuspendLayout()
-        Me.mainMenu.SuspendLayout()
+        Me.mainFrame.SuspendLayout()
+        Me.panelMain.SuspendLayout()
         Me.SuspendLayout()
         '
-        'mainFrame
+        'dtGrid1
         '
-        Me.mainFrame.BackColor = System.Drawing.Color.Azure
-        Me.mainFrame.Controls.Add(Me.Panel9)
-        Me.mainFrame.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.mainFrame.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.mainFrame.Location = New System.Drawing.Point(2, 2)
-        Me.mainFrame.Name = "mainFrame"
-        Me.mainFrame.Padding = New System.Windows.Forms.Padding(10)
-        Me.mainFrame.Size = New System.Drawing.Size(855, 490)
-        Me.mainFrame.TabIndex = 0
+        Me.dtGrid1.AllowUserToAddRows = False
+        Me.dtGrid1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        Me.dtGrid1.BackgroundColor = System.Drawing.Color.Beige
+        Me.dtGrid1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dtGrid1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.dtDesc, Me.dtPrices, Me.dtQuant, Me.dtTotal})
+        Me.dtGrid1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.dtGrid1.GridColor = System.Drawing.Color.Beige
+        Me.dtGrid1.Location = New System.Drawing.Point(20, 26)
+        Me.dtGrid1.Name = "dtGrid1"
+        Me.dtGrid1.RowTemplate.Height = 25
+        Me.dtGrid1.Size = New System.Drawing.Size(417, 191)
+        Me.dtGrid1.TabIndex = 0
         '
-        'Panel9
+        'dtDesc
         '
-        Me.Panel9.BackColor = System.Drawing.Color.Beige
-        Me.Panel9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Panel9.Controls.Add(Me.PageContainer)
-        Me.Panel9.Controls.Add(Me.Panel1)
-        Me.Panel9.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel9.Location = New System.Drawing.Point(10, 10)
-        Me.Panel9.Margin = New System.Windows.Forms.Padding(10, 5, 10, 5)
-        Me.Panel9.Name = "Panel9"
-        Me.Panel9.Padding = New System.Windows.Forms.Padding(10, 15, 10, 15)
-        Me.Panel9.Size = New System.Drawing.Size(835, 470)
-        Me.Panel9.TabIndex = 16
+        Me.dtDesc.HeaderText = "Description"
+        Me.dtDesc.Name = "dtDesc"
+        Me.dtDesc.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
         '
-        'PageContainer
+        'dtPrices
         '
-        Me.PageContainer.BackColor = System.Drawing.Color.Beige
-        Me.PageContainer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PageContainer.Controls.Add(Me.panelMain)
-        Me.PageContainer.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.PageContainer.Location = New System.Drawing.Point(10, 70)
-        Me.PageContainer.Margin = New System.Windows.Forms.Padding(10, 5, 10, 5)
-        Me.PageContainer.Name = "PageContainer"
-        Me.PageContainer.Padding = New System.Windows.Forms.Padding(2)
-        Me.PageContainer.Size = New System.Drawing.Size(815, 385)
-        Me.PageContainer.TabIndex = 19
+        Me.dtPrices.HeaderText = "Prices"
+        Me.dtPrices.Name = "dtPrices"
+        Me.dtPrices.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
         '
-        'panelMain
+        'dtQuant
         '
-        Me.panelMain.AutoSize = True
-        Me.panelMain.BackColor = System.Drawing.Color.Beige
-        Me.panelMain.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.panelMain.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.panelMain.Controls.Add(Me.btnForm2)
-        Me.panelMain.Controls.Add(Me.btnMain)
-        Me.panelMain.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.panelMain.Location = New System.Drawing.Point(2, 2)
-        Me.panelMain.Margin = New System.Windows.Forms.Padding(10, 5, 10, 5)
-        Me.panelMain.Name = "panelMain"
-        Me.panelMain.Padding = New System.Windows.Forms.Padding(2)
-        Me.panelMain.Size = New System.Drawing.Size(811, 381)
-        Me.panelMain.TabIndex = 17
+        Me.dtQuant.HeaderText = "Quantity"
+        Me.dtQuant.Name = "dtQuant"
+        Me.dtQuant.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
         '
-        'btnForm2
+        'dtTotal
         '
-        Me.btnForm2.BackColor = System.Drawing.Color.Transparent
-        Me.btnForm2.FlatAppearance.BorderColor = System.Drawing.SystemColors.ButtonShadow
-        Me.btnForm2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnForm2.Location = New System.Drawing.Point(254, 218)
-        Me.btnForm2.Name = "btnForm2"
-        Me.btnForm2.Size = New System.Drawing.Size(281, 68)
-        Me.btnForm2.TabIndex = 13
-        Me.btnForm2.Text = "Form2"
-        Me.btnForm2.UseVisualStyleBackColor = False
+        Me.dtTotal.HeaderText = "Totals"
+        Me.dtTotal.Name = "dtTotal"
+        Me.dtTotal.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
         '
-        'btnMain
+        'Label1
         '
-        Me.btnMain.BackColor = System.Drawing.Color.Transparent
-        Me.btnMain.FlatAppearance.BorderColor = System.Drawing.SystemColors.ButtonShadow
-        Me.btnMain.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnMain.Location = New System.Drawing.Point(254, 46)
-        Me.btnMain.Name = "btnMain"
-        Me.btnMain.Size = New System.Drawing.Size(281, 68)
-        Me.btnMain.TabIndex = 11
-        Me.btnMain.Text = "Main"
-        Me.btnMain.UseVisualStyleBackColor = False
+        Me.Label1.BackColor = System.Drawing.Color.Transparent
+        Me.Label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.Label1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Label1.Font = New System.Drawing.Font("Roboto", 13.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point)
+        Me.Label1.Location = New System.Drawing.Point(5, 5)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(447, 22)
+        Me.Label1.TabIndex = 6
+        Me.Label1.Text = "Grid View"
+        Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Panel11
+        '
+        Me.Panel11.Controls.Add(Me.Label1)
+        Me.Panel11.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel11.Location = New System.Drawing.Point(10, 15)
+        Me.Panel11.Margin = New System.Windows.Forms.Padding(0, 10, 0, 10)
+        Me.Panel11.Name = "Panel11"
+        Me.Panel11.Padding = New System.Windows.Forms.Padding(5)
+        Me.Panel11.Size = New System.Drawing.Size(457, 32)
+        Me.Panel11.TabIndex = 9
+        '
+        'Panel10
+        '
+        Me.Panel10.BackColor = System.Drawing.Color.Beige
+        Me.Panel10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Panel10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Panel10.Controls.Add(Me.GroupBox1)
+        Me.Panel10.Controls.Add(Me.Panel11)
+        Me.Panel10.Dock = System.Windows.Forms.DockStyle.Right
+        Me.Panel10.Location = New System.Drawing.Point(358, 2)
+        Me.Panel10.Margin = New System.Windows.Forms.Padding(10, 5, 10, 5)
+        Me.Panel10.Name = "Panel10"
+        Me.Panel10.Padding = New System.Windows.Forms.Padding(10, 15, 10, 15)
+        Me.Panel10.Size = New System.Drawing.Size(479, 370)
+        Me.Panel10.TabIndex = 17
+        '
+        'GroupBox1
+        '
+        Me.GroupBox1.BackColor = System.Drawing.Color.Transparent
+        Me.GroupBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.GroupBox1.Controls.Add(Me.dtGrid1)
+        Me.GroupBox1.Dock = System.Windows.Forms.DockStyle.Top
+        Me.GroupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.GroupBox1.Location = New System.Drawing.Point(10, 47)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(0)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(20, 10, 20, 10)
+        Me.GroupBox1.Size = New System.Drawing.Size(457, 227)
+        Me.GroupBox1.TabIndex = 10
+        Me.GroupBox1.TabStop = False
+        '
+        'cmbProd
+        '
+        Me.cmbProd.BackColor = System.Drawing.Color.Beige
+        Me.cmbProd.Dock = System.Windows.Forms.DockStyle.Right
+        Me.cmbProd.FormattingEnabled = True
+        Me.cmbProd.Items.AddRange(New Object() {"banana1", "banana2", "banana3", "banana4", "banana5", "banana6", "banana7", "banana8", "banana9"})
+        Me.cmbProd.Location = New System.Drawing.Point(117, 5)
+        Me.cmbProd.Name = "cmbProd"
+        Me.cmbProd.Size = New System.Drawing.Size(132, 23)
+        Me.cmbProd.TabIndex = 0
+        '
+        'Panel2
+        '
+        Me.Panel2.Controls.Add(Me.cmbProd)
+        Me.Panel2.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel2.Location = New System.Drawing.Point(20, 26)
+        Me.Panel2.Margin = New System.Windows.Forms.Padding(0, 10, 0, 10)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Padding = New System.Windows.Forms.Padding(5)
+        Me.Panel2.Size = New System.Drawing.Size(254, 32)
+        Me.Panel2.TabIndex = 10
+        '
+        'txtDesc
+        '
+        Me.txtDesc.BackColor = System.Drawing.Color.Beige
+        Me.txtDesc.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtDesc.Dock = System.Windows.Forms.DockStyle.Right
+        Me.txtDesc.Location = New System.Drawing.Point(117, 5)
+        Me.txtDesc.Name = "txtDesc"
+        Me.txtDesc.Size = New System.Drawing.Size(132, 23)
+        Me.txtDesc.TabIndex = 1
+        '
+        'Label2
+        '
+        Me.Label2.BackColor = System.Drawing.Color.Transparent
+        Me.Label2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.Label2.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Label2.Font = New System.Drawing.Font("Roboto", 10.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point)
+        Me.Label2.Location = New System.Drawing.Point(5, 5)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(107, 22)
+        Me.Label2.TabIndex = 6
+        Me.Label2.Text = "Description"
+        Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Panel3
+        '
+        Me.Panel3.Controls.Add(Me.txtDesc)
+        Me.Panel3.Controls.Add(Me.Label2)
+        Me.Panel3.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel3.Location = New System.Drawing.Point(20, 58)
+        Me.Panel3.Margin = New System.Windows.Forms.Padding(0, 10, 0, 10)
+        Me.Panel3.Name = "Panel3"
+        Me.Panel3.Padding = New System.Windows.Forms.Padding(5)
+        Me.Panel3.Size = New System.Drawing.Size(254, 32)
+        Me.Panel3.TabIndex = 11
+        '
+        'txtPrice
+        '
+        Me.txtPrice.BackColor = System.Drawing.Color.Beige
+        Me.txtPrice.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtPrice.Dock = System.Windows.Forms.DockStyle.Right
+        Me.txtPrice.Location = New System.Drawing.Point(117, 5)
+        Me.txtPrice.Name = "txtPrice"
+        Me.txtPrice.Size = New System.Drawing.Size(132, 23)
+        Me.txtPrice.TabIndex = 1
+        '
+        'Label4
+        '
+        Me.Label4.BackColor = System.Drawing.Color.Transparent
+        Me.Label4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.Label4.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Label4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Label4.Font = New System.Drawing.Font("Roboto", 10.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point)
+        Me.Label4.Location = New System.Drawing.Point(5, 5)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(107, 22)
+        Me.Label4.TabIndex = 6
+        Me.Label4.Text = "Price"
+        Me.Label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Panel6
+        '
+        Me.Panel6.Controls.Add(Me.txtPrice)
+        Me.Panel6.Controls.Add(Me.Label4)
+        Me.Panel6.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel6.Location = New System.Drawing.Point(20, 90)
+        Me.Panel6.Margin = New System.Windows.Forms.Padding(0, 10, 0, 10)
+        Me.Panel6.Name = "Panel6"
+        Me.Panel6.Padding = New System.Windows.Forms.Padding(5)
+        Me.Panel6.Size = New System.Drawing.Size(254, 32)
+        Me.Panel6.TabIndex = 12
+        '
+        'txtQuant
+        '
+        Me.txtQuant.BackColor = System.Drawing.Color.Beige
+        Me.txtQuant.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtQuant.Dock = System.Windows.Forms.DockStyle.Right
+        Me.txtQuant.Location = New System.Drawing.Point(117, 5)
+        Me.txtQuant.Name = "txtQuant"
+        Me.txtQuant.Size = New System.Drawing.Size(132, 23)
+        Me.txtQuant.TabIndex = 1
+        '
+        'Label5
+        '
+        Me.Label5.BackColor = System.Drawing.Color.Transparent
+        Me.Label5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.Label5.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Label5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Label5.Font = New System.Drawing.Font("Roboto", 10.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point)
+        Me.Label5.Location = New System.Drawing.Point(5, 5)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(107, 22)
+        Me.Label5.TabIndex = 6
+        Me.Label5.Text = "Quantity"
+        Me.Label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Panel7
+        '
+        Me.Panel7.Controls.Add(Me.txtQuant)
+        Me.Panel7.Controls.Add(Me.Label5)
+        Me.Panel7.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel7.Location = New System.Drawing.Point(20, 122)
+        Me.Panel7.Margin = New System.Windows.Forms.Padding(0, 10, 0, 10)
+        Me.Panel7.Name = "Panel7"
+        Me.Panel7.Padding = New System.Windows.Forms.Padding(5)
+        Me.Panel7.Size = New System.Drawing.Size(254, 32)
+        Me.Panel7.TabIndex = 14
+        '
+        'txtTotals
+        '
+        Me.txtTotals.BackColor = System.Drawing.Color.Beige
+        Me.txtTotals.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtTotals.Dock = System.Windows.Forms.DockStyle.Right
+        Me.txtTotals.Enabled = False
+        Me.txtTotals.Location = New System.Drawing.Point(117, 5)
+        Me.txtTotals.Name = "txtTotals"
+        Me.txtTotals.ReadOnly = True
+        Me.txtTotals.Size = New System.Drawing.Size(132, 23)
+        Me.txtTotals.TabIndex = 1
+        '
+        'Label6
+        '
+        Me.Label6.BackColor = System.Drawing.Color.Transparent
+        Me.Label6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.Label6.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Label6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Label6.Font = New System.Drawing.Font("Roboto", 10.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point)
+        Me.Label6.Location = New System.Drawing.Point(5, 5)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(107, 22)
+        Me.Label6.TabIndex = 6
+        Me.Label6.Text = "Totals"
+        Me.Label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Panel8
+        '
+        Me.Panel8.Controls.Add(Me.txtTotals)
+        Me.Panel8.Controls.Add(Me.Label6)
+        Me.Panel8.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel8.Location = New System.Drawing.Point(20, 154)
+        Me.Panel8.Margin = New System.Windows.Forms.Padding(0, 10, 0, 10)
+        Me.Panel8.Name = "Panel8"
+        Me.Panel8.Padding = New System.Windows.Forms.Padding(5)
+        Me.Panel8.Size = New System.Drawing.Size(254, 32)
+        Me.Panel8.TabIndex = 15
+        '
+        'btnCompute
+        '
+        Me.btnCompute.BackColor = System.Drawing.Color.Transparent
+        Me.btnCompute.Dock = System.Windows.Forms.DockStyle.Left
+        Me.btnCompute.FlatAppearance.BorderColor = System.Drawing.SystemColors.ButtonShadow
+        Me.btnCompute.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnCompute.Location = New System.Drawing.Point(5, 5)
+        Me.btnCompute.Name = "btnCompute"
+        Me.btnCompute.Size = New System.Drawing.Size(107, 38)
+        Me.btnCompute.TabIndex = 10
+        Me.btnCompute.Text = "Process"
+        Me.btnCompute.UseVisualStyleBackColor = False
+        '
+        'Panel4
+        '
+        Me.Panel4.Controls.Add(Me.btnAdd)
+        Me.Panel4.Controls.Add(Me.btnCompute)
+        Me.Panel4.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel4.Location = New System.Drawing.Point(20, 186)
+        Me.Panel4.Margin = New System.Windows.Forms.Padding(0, 10, 0, 0)
+        Me.Panel4.Name = "Panel4"
+        Me.Panel4.Padding = New System.Windows.Forms.Padding(5)
+        Me.Panel4.Size = New System.Drawing.Size(254, 48)
+        Me.Panel4.TabIndex = 16
+        '
+        'btnAdd
+        '
+        Me.btnAdd.BackColor = System.Drawing.Color.Transparent
+        Me.btnAdd.Dock = System.Windows.Forms.DockStyle.Right
+        Me.btnAdd.FlatAppearance.BorderColor = System.Drawing.SystemColors.ButtonShadow
+        Me.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnAdd.Location = New System.Drawing.Point(142, 5)
+        Me.btnAdd.Name = "btnAdd"
+        Me.btnAdd.Size = New System.Drawing.Size(107, 38)
+        Me.btnAdd.TabIndex = 11
+        Me.btnAdd.Text = "Add to Grid"
+        Me.btnAdd.UseVisualStyleBackColor = False
+        '
+        'GroupBox2
+        '
+        Me.GroupBox2.BackColor = System.Drawing.Color.Transparent
+        Me.GroupBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.GroupBox2.Controls.Add(Me.Panel4)
+        Me.GroupBox2.Controls.Add(Me.Panel8)
+        Me.GroupBox2.Controls.Add(Me.Panel7)
+        Me.GroupBox2.Controls.Add(Me.Panel6)
+        Me.GroupBox2.Controls.Add(Me.Panel3)
+        Me.GroupBox2.Controls.Add(Me.Panel2)
+        Me.GroupBox2.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.GroupBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.GroupBox2.Location = New System.Drawing.Point(10, 87)
+        Me.GroupBox2.Margin = New System.Windows.Forms.Padding(0)
+        Me.GroupBox2.Name = "GroupBox2"
+        Me.GroupBox2.Padding = New System.Windows.Forms.Padding(20, 10, 20, 10)
+        Me.GroupBox2.Size = New System.Drawing.Size(294, 266)
+        Me.GroupBox2.TabIndex = 8
+        Me.GroupBox2.TabStop = False
+        '
+        'Label3
+        '
+        Me.Label3.BackColor = System.Drawing.Color.Transparent
+        Me.Label3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.Label3.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Label3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Label3.Font = New System.Drawing.Font("Roboto", 10.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point)
+        Me.Label3.Location = New System.Drawing.Point(5, 5)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(284, 22)
+        Me.Label3.TabIndex = 6
+        Me.Label3.Text = "Inventory"
+        Me.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Panel5
+        '
+        Me.Panel5.Controls.Add(Me.Label3)
+        Me.Panel5.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel5.Location = New System.Drawing.Point(10, 15)
+        Me.Panel5.Margin = New System.Windows.Forms.Padding(0, 10, 0, 10)
+        Me.Panel5.Name = "Panel5"
+        Me.Panel5.Padding = New System.Windows.Forms.Padding(5)
+        Me.Panel5.Size = New System.Drawing.Size(294, 32)
+        Me.Panel5.TabIndex = 9
         '
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.Beige
         Me.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Panel1.Controls.Add(Me.mainMenu)
-        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel1.Location = New System.Drawing.Point(10, 15)
+        Me.Panel1.Controls.Add(Me.Panel5)
+        Me.Panel1.Controls.Add(Me.GroupBox2)
+        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Panel1.Location = New System.Drawing.Point(2, 2)
         Me.Panel1.Margin = New System.Windows.Forms.Padding(10, 5, 10, 5)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Padding = New System.Windows.Forms.Padding(2)
-        Me.Panel1.Size = New System.Drawing.Size(815, 45)
-        Me.Panel1.TabIndex = 18
+        Me.Panel1.Padding = New System.Windows.Forms.Padding(10, 15, 10, 15)
+        Me.Panel1.Size = New System.Drawing.Size(316, 370)
+        Me.Panel1.TabIndex = 16
         '
-        'mainMenu
+        'mainFrame
         '
-        Me.mainMenu.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.mainMenu.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.menuForms, Me.menuSettings, Me.HomeToolStripMenuItem})
-        Me.mainMenu.Location = New System.Drawing.Point(2, 2)
-        Me.mainMenu.Name = "mainMenu"
-        Me.mainMenu.Size = New System.Drawing.Size(809, 39)
-        Me.mainMenu.TabIndex = 0
-        Me.mainMenu.Text = "MenuStrip1"
+        Me.mainFrame.BackColor = System.Drawing.Color.Azure
+        Me.mainFrame.Controls.Add(Me.panelMain)
+        Me.mainFrame.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.mainFrame.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.mainFrame.Location = New System.Drawing.Point(0, 0)
+        Me.mainFrame.Name = "mainFrame"
+        Me.mainFrame.Padding = New System.Windows.Forms.Padding(10)
+        Me.mainFrame.Size = New System.Drawing.Size(859, 394)
+        Me.mainFrame.TabIndex = 1
         '
-        'menuForms
+        'panelMain
         '
-        Me.menuForms.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.formMain, Me.formForm2, Me.formBlank, Me.formsHome})
-        Me.menuForms.Name = "menuForms"
-        Me.menuForms.Size = New System.Drawing.Size(52, 35)
-        Me.menuForms.Text = "Forms"
-        '
-        'formMain
-        '
-        Me.formMain.Name = "formMain"
-        Me.formMain.Size = New System.Drawing.Size(108, 22)
-        Me.formMain.Text = "Main"
-        '
-        'formForm2
-        '
-        Me.formForm2.Name = "formForm2"
-        Me.formForm2.Size = New System.Drawing.Size(108, 22)
-        Me.formForm2.Text = "Form2"
-        '
-        'formBlank
-        '
-        Me.formBlank.Name = "formBlank"
-        Me.formBlank.Size = New System.Drawing.Size(108, 22)
-        Me.formBlank.Text = "Blank"
-        '
-        'formsHome
-        '
-        Me.formsHome.Name = "formsHome"
-        Me.formsHome.Size = New System.Drawing.Size(108, 22)
-        Me.formsHome.Text = "Home"
-        '
-        'menuSettings
-        '
-        Me.menuSettings.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ExitToolStripMenuItem})
-        Me.menuSettings.Name = "menuSettings"
-        Me.menuSettings.Size = New System.Drawing.Size(61, 35)
-        Me.menuSettings.Text = "Settings"
-        '
-        'ExitToolStripMenuItem
-        '
-        Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
-        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
-        Me.ExitToolStripMenuItem.Text = "Exit"
-        '
-        'HomeToolStripMenuItem
-        '
-        Me.HomeToolStripMenuItem.Name = "HomeToolStripMenuItem"
-        Me.HomeToolStripMenuItem.Size = New System.Drawing.Size(52, 35)
-        Me.HomeToolStripMenuItem.Text = "Home"
+        Me.panelMain.AutoSize = True
+        Me.panelMain.BackColor = System.Drawing.Color.Beige
+        Me.panelMain.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.panelMain.Controls.Add(Me.Panel10)
+        Me.panelMain.Controls.Add(Me.Panel1)
+        Me.panelMain.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.panelMain.Location = New System.Drawing.Point(10, 10)
+        Me.panelMain.Margin = New System.Windows.Forms.Padding(10, 5, 10, 5)
+        Me.panelMain.Name = "panelMain"
+        Me.panelMain.Padding = New System.Windows.Forms.Padding(2)
+        Me.panelMain.Size = New System.Drawing.Size(839, 374)
+        Me.panelMain.TabIndex = 16
         '
         'Form1
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 14.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.AutoSize = True
-        Me.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.ClientSize = New System.Drawing.Size(859, 494)
+        Me.ClientSize = New System.Drawing.Size(859, 394)
         Me.Controls.Add(Me.mainFrame)
-        Me.Font = New System.Drawing.Font("Roboto", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
-        Me.MainMenuStrip = Me.mainMenu
         Me.Name = "Form1"
-        Me.Padding = New System.Windows.Forms.Padding(2)
-        Me.ShowIcon = False
-        Me.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide
-        Me.Text = "Window Forms"
-        Me.mainFrame.ResumeLayout(False)
-        Me.Panel9.ResumeLayout(False)
-        Me.PageContainer.ResumeLayout(False)
-        Me.PageContainer.PerformLayout()
-        Me.panelMain.ResumeLayout(False)
+        Me.Text = "Main Form"
+        CType(Me.dtGrid1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel11.ResumeLayout(False)
+        Me.Panel10.ResumeLayout(False)
+        Me.GroupBox1.ResumeLayout(False)
+        Me.Panel2.ResumeLayout(False)
+        Me.Panel3.ResumeLayout(False)
+        Me.Panel3.PerformLayout()
+        Me.Panel6.ResumeLayout(False)
+        Me.Panel6.PerformLayout()
+        Me.Panel7.ResumeLayout(False)
+        Me.Panel7.PerformLayout()
+        Me.Panel8.ResumeLayout(False)
+        Me.Panel8.PerformLayout()
+        Me.Panel4.ResumeLayout(False)
+        Me.GroupBox2.ResumeLayout(False)
+        Me.Panel5.ResumeLayout(False)
         Me.Panel1.ResumeLayout(False)
-        Me.Panel1.PerformLayout()
-        Me.mainMenu.ResumeLayout(False)
-        Me.mainMenu.PerformLayout()
+        Me.mainFrame.ResumeLayout(False)
+        Me.mainFrame.PerformLayout()
+        Me.panelMain.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
 
+    Friend WithEvents dtGrid1 As DataGridView
+    Friend WithEvents Label1 As Label
+    Friend WithEvents Panel11 As Panel
+    Friend WithEvents Panel10 As Panel
+    Friend WithEvents GroupBox1 As GroupBox
+    Friend WithEvents cmbProd As ComboBox
+    Friend WithEvents Panel2 As Panel
+    Friend WithEvents txtDesc As TextBox
+    Friend WithEvents Label2 As Label
+    Friend WithEvents Panel3 As Panel
+    Friend WithEvents txtPrice As TextBox
+    Friend WithEvents Label4 As Label
+    Friend WithEvents Panel6 As Panel
+    Friend WithEvents txtQuant As TextBox
+    Friend WithEvents Label5 As Label
+    Friend WithEvents Panel7 As Panel
+    Friend WithEvents txtTotals As TextBox
+    Friend WithEvents Label6 As Label
+    Friend WithEvents Panel8 As Panel
+    Friend WithEvents btnCompute As Button
+    Friend WithEvents Panel4 As Panel
+    Friend WithEvents GroupBox2 As GroupBox
+    Friend WithEvents Label3 As Label
+    Friend WithEvents Panel5 As Panel
+    Friend WithEvents Panel1 As Panel
     Friend WithEvents mainFrame As Panel
     Friend WithEvents Panel9 As Panel
-    Friend WithEvents PageContainer As Panel
-    Friend WithEvents Panel1 As Panel
-    Friend WithEvents mainMenu As MenuStrip
-    Friend WithEvents menuForms As ToolStripMenuItem
-    Friend WithEvents formMain As ToolStripMenuItem
-    Friend WithEvents formBlank As ToolStripMenuItem
-    Friend WithEvents menuSettings As ToolStripMenuItem
-    Friend WithEvents ExitToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents formForm2 As ToolStripMenuItem
     Friend WithEvents panelMain As Panel
-    Friend WithEvents btnForm2 As Button
-    Friend WithEvents btnMain As Button
-    Friend WithEvents formsHome As ToolStripMenuItem
-    Friend WithEvents HomeToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents btnAdd As Button
+    Friend WithEvents dtDesc As DataGridViewTextBoxColumn
+    Friend WithEvents dtPrices As DataGridViewTextBoxColumn
+    Friend WithEvents dtQuant As DataGridViewTextBoxColumn
+    Friend WithEvents dtTotal As DataGridViewTextBoxColumn
 End Class
